@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Paint</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <button id="crayon">crayon</button>
+           <button id="ligne">ligne</button>
+           <button id="gomme">gomme</button>
+           <button id="cercle">cercle Vide</button>
+           <button id="cerclep">cercle Plein</button>
+           <button id="rect">rectangle</button>
+           <button id="rectp">rectangle Plein</button>
+        </div>
+        <select id="listEpaisseur" onchange="getSelectValue();">
+            <option value="3">3</option>
+           <option value="8">8</option>
+           <option value="12">12</option>
+           <option value="14">14</option>
+           <option value="16">16</option>
+        </select>
+        <input type="color" id="color">
+        <input type="button" onclick="lineColor()" value="submit">
+        <canvas id="myCanvas" width="600" height="600"></canvas>
+        <script src="paint.js"></script>
+    </body>
+</html>
